@@ -1,0 +1,23 @@
+[2024-08-07T14:55:04.713+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T14:55:04.758+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-space-exploration.Autorizacion_NASA manual__2024-08-07T14:20:08.695612+00:00 [queued]>
+[2024-08-07T14:55:04.774+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-space-exploration.Autorizacion_NASA manual__2024-08-07T14:20:08.695612+00:00 [queued]>
+[2024-08-07T14:55:04.776+0000] {taskinstance.py:2306} INFO - Starting attempt 8 of 8
+[2024-08-07T14:55:04.813+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Autorizacion_NASA> on 2024-08-07 14:20:08.695612+00:00
+[2024-08-07T14:55:04.821+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1501) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T14:55:04.824+0000] {standard_task_runner.py:64} INFO - Started process 1508 to run task
+[2024-08-07T14:55:04.823+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***-space-exploration', 'Autorizacion_NASA', 'manual__2024-08-07T14:20:08.695612+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmpcg0d9nal']
+[2024-08-07T14:55:04.825+0000] {standard_task_runner.py:91} INFO - Job 266: Subtask Autorizacion_NASA
+[2024-08-07T14:55:04.898+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow-space-exploration.Autorizacion_NASA manual__2024-08-07T14:20:08.695612+00:00 [running]> on host 38873943cc86
+[2024-08-07T14:55:05.016+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-space-exploration' AIRFLOW_CTX_TASK_ID='Autorizacion_NASA' AIRFLOW_CTX_EXECUTION_DATE='2024-08-07T14:20:08.695612+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-07T14:20:08.695612+00:00'
+[2024-08-07T14:55:05.017+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T14:55:05.036+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-07T14:55:05.037+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "sleep 20 && echo 'Confirmación de la NASA, pueden proceder' > /tmp/response_20240807.txt"]
+[2024-08-07T14:55:05.047+0000] {subprocess.py:86} INFO - Output:
+[2024-08-07T14:55:25.051+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-07T14:55:25.054+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T14:55:25.097+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***-space-exploration, task_id=Autorizacion_NASA, run_id=manual__2024-08-07T14:20:08.695612+00:00, execution_date=20240807T142008, start_date=20240807T145504, end_date=20240807T145525
+[2024-08-07T14:55:25.179+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T14:55:25.210+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T14:55:25.214+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

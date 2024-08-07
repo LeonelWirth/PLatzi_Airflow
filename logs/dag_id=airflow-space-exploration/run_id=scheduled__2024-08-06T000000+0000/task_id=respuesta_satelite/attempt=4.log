@@ -1,0 +1,40 @@
+[2024-08-07T14:33:55.677+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T14:33:55.714+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-space-exploration.Respuesta_satelite scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T14:33:55.731+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-space-exploration.Respuesta_satelite scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T14:33:55.733+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2024-08-07T14:33:55.762+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Respuesta_satelite> on 2024-08-06 00:00:00+00:00
+[2024-08-07T14:33:55.771+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=827) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T14:33:55.774+0000] {standard_task_runner.py:64} INFO - Started process 832 to run task
+[2024-08-07T14:33:55.773+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***-space-exploration', 'Respuesta_satelite', 'scheduled__2024-08-06T00:00:00+00:00', '--job-id', '139', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmpwdzj9a35']
+[2024-08-07T14:33:55.776+0000] {standard_task_runner.py:91} INFO - Job 139: Subtask Respuesta_satelite
+[2024-08-07T14:33:55.857+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow-space-exploration.Respuesta_satelite scheduled__2024-08-06T00:00:00+00:00 [running]> on host 38873943cc86
+[2024-08-07T14:33:56.024+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-space-exploration' AIRFLOW_CTX_TASK_ID='Respuesta_satelite' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-06T00:00:00+00:00'
+[2024-08-07T14:33:56.025+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T14:33:57.601+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-07T14:33:57.601+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T14:33:57.613+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***-space-exploration, task_id=Respuesta_satelite, run_id=scheduled__2024-08-06T00:00:00+00:00, execution_date=20240806T000000, start_date=20240807T143355, end_date=20240807T143357
+[2024-08-07T14:33:57.679+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T14:33:57.697+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T14:33:57.702+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-07T14:55:30.045+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T14:55:30.089+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-space-exploration.Respuesta_Satelite scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T14:55:30.103+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-space-exploration.Respuesta_Satelite scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T14:55:30.104+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2024-08-07T14:55:30.139+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Respuesta_Satelite> on 2024-08-06 00:00:00+00:00
+[2024-08-07T14:55:30.147+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1579) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T14:55:30.151+0000] {standard_task_runner.py:64} INFO - Started process 1590 to run task
+[2024-08-07T14:55:30.151+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***-space-exploration', 'Respuesta_Satelite', 'scheduled__2024-08-06T00:00:00+00:00', '--job-id', '286', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmp0t_u6o6p']
+[2024-08-07T14:55:30.153+0000] {standard_task_runner.py:91} INFO - Job 286: Subtask Respuesta_Satelite
+[2024-08-07T14:55:30.232+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow-space-exploration.Respuesta_Satelite scheduled__2024-08-06T00:00:00+00:00 [running]> on host 38873943cc86
+[2024-08-07T14:55:30.358+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-space-exploration' AIRFLOW_CTX_TASK_ID='Respuesta_Satelite' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-06T00:00:00+00:00'
+[2024-08-07T14:55:30.360+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T14:55:31.117+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-07T14:55:31.118+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T14:55:31.130+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***-space-exploration, task_id=Respuesta_Satelite, run_id=scheduled__2024-08-06T00:00:00+00:00, execution_date=20240806T000000, start_date=20240807T145530, end_date=20240807T145531
+[2024-08-07T14:55:31.172+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T14:55:31.211+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T14:55:31.214+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,60 @@
+[2024-08-07T14:27:23.262+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T14:27:23.299+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-space-exploration.Ver_data scheduled__2024-08-01T00:00:00+00:00 [queued]>
+[2024-08-07T14:27:23.314+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-space-exploration.Ver_data scheduled__2024-08-01T00:00:00+00:00 [queued]>
+[2024-08-07T14:27:23.315+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 3
+[2024-08-07T14:27:23.341+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Ver_data> on 2024-08-01 00:00:00+00:00
+[2024-08-07T14:27:23.349+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=654) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T14:27:23.351+0000] {standard_task_runner.py:64} INFO - Started process 662 to run task
+[2024-08-07T14:27:23.351+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***-space-exploration', 'Ver_data', 'scheduled__2024-08-01T00:00:00+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmpa093d8i6']
+[2024-08-07T14:27:23.353+0000] {standard_task_runner.py:91} INFO - Job 114: Subtask Ver_data
+[2024-08-07T14:27:23.409+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow-space-exploration.Ver_data scheduled__2024-08-01T00:00:00+00:00 [running]> on host 38873943cc86
+[2024-08-07T14:27:23.526+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-space-exploration' AIRFLOW_CTX_TASK_ID='Ver_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-01T00:00:00+00:00'
+[2024-08-07T14:27:23.528+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T14:27:23.547+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-07T14:27:23.549+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls /tmp && head /tmp/platzi_data.csv']
+[2024-08-07T14:27:23.565+0000] {subprocess.py:86} INFO - Output:
+[2024-08-07T14:27:23.569+0000] {subprocess.py:93} INFO - ***tmp0huyoeai
+[2024-08-07T14:27:23.570+0000] {subprocess.py:93} INFO - ***tmp1kp36wjo
+[2024-08-07T14:27:23.571+0000] {subprocess.py:93} INFO - ***tmp6ed90a25
+[2024-08-07T14:27:23.572+0000] {subprocess.py:93} INFO - ***tmph29xe2fb
+[2024-08-07T14:27:23.573+0000] {subprocess.py:93} INFO - ***tmpup5r66vd
+[2024-08-07T14:27:23.574+0000] {subprocess.py:93} INFO - ***tmpzntej_ju
+[2024-08-07T14:27:23.575+0000] {subprocess.py:93} INFO - platzi_data_20240801.csv
+[2024-08-07T14:27:23.576+0000] {subprocess.py:93} INFO - platzi_data_20240802.csv
+[2024-08-07T14:27:23.577+0000] {subprocess.py:93} INFO - platzi_data_20240803.csv
+[2024-08-07T14:27:23.578+0000] {subprocess.py:93} INFO - platzi_data_20240804.csv
+[2024-08-07T14:27:23.579+0000] {subprocess.py:93} INFO - platzi_data_20240805.csv
+[2024-08-07T14:27:23.579+0000] {subprocess.py:93} INFO - platzi_data_20240806.csv
+[2024-08-07T14:27:23.580+0000] {subprocess.py:93} INFO - platzi_data_20240807.csv
+[2024-08-07T14:27:23.581+0000] {subprocess.py:93} INFO - pymp-bji4ygjz
+[2024-08-07T14:27:23.582+0000] {subprocess.py:93} INFO - response_20240801.txt
+[2024-08-07T14:27:23.582+0000] {subprocess.py:93} INFO - response_20240802.txt
+[2024-08-07T14:27:23.583+0000] {subprocess.py:93} INFO - response_20240803.txt
+[2024-08-07T14:27:23.584+0000] {subprocess.py:93} INFO - response_20240804.txt
+[2024-08-07T14:27:23.584+0000] {subprocess.py:93} INFO - response_20240805.txt
+[2024-08-07T14:27:23.585+0000] {subprocess.py:93} INFO - response_20240806.txt
+[2024-08-07T14:27:23.586+0000] {subprocess.py:93} INFO - response_20240807.txt
+[2024-08-07T14:27:23.586+0000] {subprocess.py:93} INFO - head: cannot open '/tmp/platzi_data.csv' for reading: No such file or directory
+[2024-08-07T14:27:23.587+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-08-07T14:27:23.589+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T14:27:23.604+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-08-07T14:27:23.609+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=***-space-exploration, task_id=Ver_data, run_id=scheduled__2024-08-01T00:00:00+00:00, execution_date=20240801T000000, start_date=20240807T142723, end_date=20240807T142723
+[2024-08-07T14:27:23.628+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 114 for task Ver_data (Bash command failed. The command returned a non-zero exit code 1.; 662)
+[2024-08-07T14:27:23.647+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-07T14:27:23.671+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T14:27:23.675+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

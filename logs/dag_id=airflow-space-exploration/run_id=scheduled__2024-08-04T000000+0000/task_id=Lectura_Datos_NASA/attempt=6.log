@@ -1,0 +1,58 @@
+[2024-08-07T15:02:22.205+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T15:02:22.258+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-space-exploration.Lectura_Datos_NASA scheduled__2024-08-04T00:00:00+00:00 [queued]>
+[2024-08-07T15:02:22.278+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-space-exploration.Lectura_Datos_NASA scheduled__2024-08-04T00:00:00+00:00 [queued]>
+[2024-08-07T15:02:22.280+0000] {taskinstance.py:2306} INFO - Starting attempt 6 of 6
+[2024-08-07T15:02:22.310+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): Lectura_Datos_NASA> on 2024-08-04 00:00:00+00:00
+[2024-08-07T15:02:22.318+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=279) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T15:02:22.320+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***-space-exploration', 'Lectura_Datos_NASA', 'scheduled__2024-08-04T00:00:00+00:00', '--job-id', '355', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmp0820zgna']
+[2024-08-07T15:02:22.322+0000] {standard_task_runner.py:64} INFO - Started process 285 to run task
+[2024-08-07T15:02:22.323+0000] {standard_task_runner.py:91} INFO - Job 355: Subtask Lectura_Datos_NASA
+[2024-08-07T15:02:22.412+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow-space-exploration.Lectura_Datos_NASA scheduled__2024-08-04T00:00:00+00:00 [running]> on host 38873943cc86
+[2024-08-07T15:02:22.533+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-space-exploration' AIRFLOW_CTX_TASK_ID='Lectura_Datos_NASA' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T00:00:00+00:00'
+[2024-08-07T15:02:22.535+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T15:02:22.555+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-07T15:02:22.558+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls /tmp && head /tmp/response_20240804.txt']
+[2024-08-07T15:02:22.571+0000] {subprocess.py:86} INFO - Output:
+[2024-08-07T15:02:22.576+0000] {subprocess.py:93} INFO - ***tmpb0_k9mhm
+[2024-08-07T15:02:22.577+0000] {subprocess.py:93} INFO - ***tmpdwu_sxau
+[2024-08-07T15:02:22.578+0000] {subprocess.py:93} INFO - ***tmpdx07biuw
+[2024-08-07T15:02:22.579+0000] {subprocess.py:93} INFO - ***tmpe00rzo4e
+[2024-08-07T15:02:22.579+0000] {subprocess.py:93} INFO - ***tmpp7gqbmf4
+[2024-08-07T15:02:22.580+0000] {subprocess.py:93} INFO - platzi_data_20240801.csv
+[2024-08-07T15:02:22.581+0000] {subprocess.py:93} INFO - platzi_data_20240802.csv
+[2024-08-07T15:02:22.582+0000] {subprocess.py:93} INFO - platzi_data_20240803.csv
+[2024-08-07T15:02:22.583+0000] {subprocess.py:93} INFO - platzi_data_20240804.csv
+[2024-08-07T15:02:22.584+0000] {subprocess.py:93} INFO - platzi_data_20240805.csv
+[2024-08-07T15:02:22.585+0000] {subprocess.py:93} INFO - platzi_data_20240806.csv
+[2024-08-07T15:02:22.586+0000] {subprocess.py:93} INFO - platzi_data_20240807.csv
+[2024-08-07T15:02:22.586+0000] {subprocess.py:93} INFO - pymp-g9gmxo5k
+[2024-08-07T15:02:22.588+0000] {subprocess.py:93} INFO - response_20240801.txt
+[2024-08-07T15:02:22.589+0000] {subprocess.py:93} INFO - response_20240802.txt
+[2024-08-07T15:02:22.590+0000] {subprocess.py:93} INFO - response_20240803.txt
+[2024-08-07T15:02:22.591+0000] {subprocess.py:93} INFO - response_20240804.txt
+[2024-08-07T15:02:22.592+0000] {subprocess.py:93} INFO - response_20240805.txt
+[2024-08-07T15:02:22.592+0000] {subprocess.py:93} INFO - response_20240806.txt
+[2024-08-07T15:02:22.593+0000] {subprocess.py:93} INFO - response_20240807.txt
+[2024-08-07T15:02:22.600+0000] {subprocess.py:93} INFO - tmp2weef0t8
+[2024-08-07T15:02:22.601+0000] {subprocess.py:93} INFO - tmp5324rac7
+[2024-08-07T15:02:22.602+0000] {subprocess.py:93} INFO - tmpdqvoinyf
+[2024-08-07T15:02:22.603+0000] {subprocess.py:93} INFO - tmpe3_zn7bp
+[2024-08-07T15:02:22.604+0000] {subprocess.py:93} INFO - tmpffxnt4mp
+[2024-08-07T15:02:22.605+0000] {subprocess.py:93} INFO - tmpjpoma8_4
+[2024-08-07T15:02:22.606+0000] {subprocess.py:93} INFO - tmpmdd1mezh
+[2024-08-07T15:02:22.607+0000] {subprocess.py:93} INFO - tmpn9iku32l
+[2024-08-07T15:02:22.608+0000] {subprocess.py:93} INFO - tmpnbqmrw3_
+[2024-08-07T15:02:22.608+0000] {subprocess.py:93} INFO - tmpop2i4r08
+[2024-08-07T15:02:22.609+0000] {subprocess.py:93} INFO - tmpqusd4zfz
+[2024-08-07T15:02:22.610+0000] {subprocess.py:93} INFO - tmprul79jv0
+[2024-08-07T15:02:22.610+0000] {subprocess.py:93} INFO - tmpu69u53lv
+[2024-08-07T15:02:22.611+0000] {subprocess.py:93} INFO - tmpvj785b1w
+[2024-08-07T15:02:22.612+0000] {subprocess.py:93} INFO - Confirmación de la NASA, pueden proceder
+[2024-08-07T15:02:22.612+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-07T15:02:22.614+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T15:02:22.649+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***-space-exploration, task_id=Lectura_Datos_NASA, run_id=scheduled__2024-08-04T00:00:00+00:00, execution_date=20240804T000000, start_date=20240807T150222, end_date=20240807T150222
+[2024-08-07T15:02:22.702+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T15:02:22.753+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T15:02:22.759+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
