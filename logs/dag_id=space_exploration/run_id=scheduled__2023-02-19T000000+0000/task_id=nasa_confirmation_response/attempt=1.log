@@ -1,0 +1,23 @@
+[2024-08-07T20:33:10.932+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T20:33:10.967+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: space_exploration.nasa_confirmation_response scheduled__2023-02-19T00:00:00+00:00 [queued]>
+[2024-08-07T20:33:10.978+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: space_exploration.nasa_confirmation_response scheduled__2023-02-19T00:00:00+00:00 [queued]>
+[2024-08-07T20:33:10.980+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-08-07T20:33:11.460+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): nasa_confirmation_response> on 2023-02-19 00:00:00+00:00
+[2024-08-07T20:33:11.473+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=115) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T20:33:11.478+0000] {standard_task_runner.py:64} INFO - Started process 142 to run task
+[2024-08-07T20:33:11.477+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'space_exploration', 'nasa_confirmation_response', 'scheduled__2023-02-19T00:00:00+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmp8y4yh_16']
+[2024-08-07T20:33:11.484+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask nasa_confirmation_response
+[2024-08-07T20:33:11.602+0000] {task_command.py:426} INFO - Running <TaskInstance: space_exploration.nasa_confirmation_response scheduled__2023-02-19T00:00:00+00:00 [running]> on host 13935ade345d
+[2024-08-07T20:33:11.763+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='space_exploration' AIRFLOW_CTX_TASK_ID='nasa_confirmation_response' AIRFLOW_CTX_EXECUTION_DATE='2023-02-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-19T00:00:00+00:00'
+[2024-08-07T20:33:11.765+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T20:33:11.785+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-07T20:33:11.786+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 20 && echo "Confirmation from NASA, you can proceed." > /tmp/response_20230219.txt']
+[2024-08-07T20:33:11.799+0000] {subprocess.py:86} INFO - Output:
+[2024-08-07T20:33:31.801+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-07T20:33:31.803+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T20:33:31.856+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=space_exploration, task_id=nasa_confirmation_response, run_id=scheduled__2023-02-19T00:00:00+00:00, execution_date=20230219T000000, start_date=20240807T203310, end_date=20240807T203331
+[2024-08-07T20:33:31.947+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T20:33:32.023+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T20:33:32.035+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

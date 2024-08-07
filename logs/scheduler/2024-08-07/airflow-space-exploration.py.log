@@ -2203,3 +2203,71 @@ airflow.exceptions.AirflowException: missing keyword argument 'bash_command'
 [2024-08-07T17:02:11.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
 [2024-08-07T17:02:11.043+0000] {logging_mixin.py:188} INFO - [2024-08-07T17:02:11.029+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
 [2024-08-07T17:04:02.643+0000] {logging_mixin.py:188} INFO - [2024-08-07T17:03:00.262+0000] {timeout.py:68} ERROR - Process timed out, PID: 880
+[2024-08-07T20:31:47.242+0000] {processor.py:161} INFO - Started process (PID=63) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:31:47.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:31:47.248+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:47.247+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:31:49.959+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:31:50.229+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.228+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:space_exploration
+[2024-08-07T20:31:50.252+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.251+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:space_exploration
+[2024-08-07T20:31:50.264+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.264+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:space_exploration
+[2024-08-07T20:31:50.266+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.265+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:31:50.284+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.283+0000] {dag.py:3111} INFO - Creating ORM DAG for space_exploration
+[2024-08-07T20:31:50.309+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:31:50.309+0000] {dag.py:3947} INFO - Setting next_dagrun for space_exploration to 2023-02-09 00:00:00+00:00, run_after=2023-02-10 00:00:00+00:00
+[2024-08-07T20:31:50.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 3.138 seconds
+[2024-08-07T20:32:20.606+0000] {processor.py:161} INFO - Started process (PID=71) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:20.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:32:20.610+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:20.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:21.137+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:21.161+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:21.161+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:32:21.178+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:21.178+0000] {dag.py:3947} INFO - Setting next_dagrun for space_exploration to 2023-02-09 00:00:00+00:00, run_after=2023-02-10 00:00:00+00:00
+[2024-08-07T20:32:21.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.601 seconds
+[2024-08-07T20:32:51.575+0000] {processor.py:161} INFO - Started process (PID=79) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:51.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:32:51.579+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:51.578+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:52.099+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:32:52.121+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:52.121+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:32:52.158+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:32:52.157+0000] {dag.py:3947} INFO - Setting next_dagrun for space_exploration to 2023-02-09 00:00:00+00:00, run_after=2023-02-10 00:00:00+00:00
+[2024-08-07T20:32:52.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.636 seconds
+[2024-08-07T20:33:22.515+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:22.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:33:22.519+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:33:22.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:23.184+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:23.209+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:33:23.209+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:33:23.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.768 seconds
+[2024-08-07T20:33:53.511+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:53.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:33:53.516+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:33:53.515+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:54.851+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:33:54.954+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:33:54.954+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:33:55.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 1.620 seconds
+[2024-08-07T20:34:25.462+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:25.464+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:34:25.466+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:34:25.465+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:25.834+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:26.029+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:34:26.028+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:34:26.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.643 seconds
+[2024-08-07T20:34:56.411+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:56.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:34:56.414+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:34:56.414+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:56.775+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:34:57.004+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:34:57.003+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:34:57.071+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.666 seconds
+[2024-08-07T20:35:27.360+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:27.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:35:27.362+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:35:27.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:27.961+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:27.991+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:35:27.990+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:35:28.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.684 seconds
+[2024-08-07T20:35:58.269+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:58.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:35:58.271+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:35:58.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:58.820+0000] {processor.py:840} INFO - DAG(s) 'space_exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:35:58.852+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:35:58.851+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:35:58.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.629 seconds
+[2024-08-07T20:36:26.157+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:36:26.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-space-exploration.py for tasks to queue
+[2024-08-07T20:36:26.160+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:36:26.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:36:26.209+0000] {processor.py:840} INFO - DAG(s) 'airflow-space-exploration' retrieved from /opt/airflow/dags/airflow-space-exploration.py
+[2024-08-07T20:36:26.338+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:36:26.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-07T20:36:26.367+0000] {logging_mixin.py:188} INFO - [2024-08-07T20:36:26.367+0000] {dag.py:3947} INFO - Setting next_dagrun for airflow-space-exploration to 2024-08-07 00:00:00+00:00, run_after=2024-08-08 00:00:00+00:00
+[2024-08-07T20:36:26.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-space-exploration.py took 0.256 seconds

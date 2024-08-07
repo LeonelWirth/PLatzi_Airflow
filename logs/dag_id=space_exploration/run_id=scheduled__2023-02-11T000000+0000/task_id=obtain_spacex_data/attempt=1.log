@@ -1,0 +1,26 @@
+[2024-08-07T20:33:38.098+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T20:33:38.201+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: space_exploration.obtain_spacex_data scheduled__2023-02-11T00:00:00+00:00 [queued]>
+[2024-08-07T20:33:38.238+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: space_exploration.obtain_spacex_data scheduled__2023-02-11T00:00:00+00:00 [queued]>
+[2024-08-07T20:33:38.241+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-08-07T20:33:38.776+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): obtain_spacex_data> on 2023-02-11 00:00:00+00:00
+[2024-08-07T20:33:38.828+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=226) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-07T20:33:38.835+0000] {standard_task_runner.py:64} INFO - Started process 274 to run task
+[2024-08-07T20:33:38.829+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'space_exploration', 'obtain_spacex_data', 'scheduled__2023-02-11T00:00:00+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/***-space-exploration.py', '--cfg-path', '/tmp/tmpy1vf_pbc']
+[2024-08-07T20:33:38.843+0000] {standard_task_runner.py:91} INFO - Job 76: Subtask obtain_spacex_data
+[2024-08-07T20:33:39.044+0000] {task_command.py:426} INFO - Running <TaskInstance: space_exploration.obtain_spacex_data scheduled__2023-02-11T00:00:00+00:00 [running]> on host 13935ade345d
+[2024-08-07T20:33:39.364+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='space_exploration' AIRFLOW_CTX_TASK_ID='obtain_spacex_data' AIRFLOW_CTX_EXECUTION_DATE='2023-02-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-11T00:00:00+00:00'
+[2024-08-07T20:33:39.376+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T20:33:39.417+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-07T20:33:39.419+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl https://api.spacexdata.com/v4/launches/past > /tmp/spacex_20230211.json']
+[2024-08-07T20:33:39.453+0000] {subprocess.py:86} INFO - Output:
+[2024-08-07T20:33:39.487+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-08-07T20:33:39.491+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-08-07T20:33:40.465+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  406k    0  406k    0     0   415k      0 --:--:-- --:--:-- --:--:--  415k
+[2024-08-07T20:33:40.469+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-07T20:33:40.475+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T20:33:40.549+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=space_exploration, task_id=obtain_spacex_data, run_id=scheduled__2023-02-11T00:00:00+00:00, execution_date=20230211T000000, start_date=20240807T203338, end_date=20240807T203340
+[2024-08-07T20:33:40.705+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-07T20:33:40.787+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T20:33:40.792+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
